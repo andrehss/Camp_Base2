@@ -10,7 +10,11 @@ public class CadastroFlows {
         cadastroPage = new CadastroPage();
     }
 
-    public void cadastrarReportIssue(){
+    public void cadastrarReportIssue(String categoriaId){
+
         cadastroPage.clicarReportIssueField();
+        cadastroPage.clicarSelectProject();
+        cadastroPage.comboBoxSelectCategoryId(categoriaId);
     }
+
 }
