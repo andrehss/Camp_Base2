@@ -1,0 +1,41 @@
+<html><head>
+	<link rel="stylesheet" type="text/css" href="https://mantis-prova.base2.com.br/css/default.css">
+	<script type="text/javascript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma-directive" content="no-cache">
+	<meta http-equiv="Cache-Directive" content="no-cache">
+	<meta http-equiv="Expires" content="Fri, 25 Mar 2022 01:43:43 GMT">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="https://mantis-prova.base2.com.br/browser_search_plugin.php?type=text">	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="https://mantis-prova.base2.com.br/browser_search_plugin.php?type=id">	<title>MantisBT</title>
+<script type="text/javascript" src="/javascript/min/common.js"></script>
+<script type="text/javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/javascript/min/ajax.js"></script>
+	<meta http-equiv="Refresh" content="2;URL=https://mantis-prova.base2.com.br/view_all_bug_page.php">
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="MantisBT" src="/images/mantis_logo.png"></a></div><table class="hide"><tbody><tr><td class="login-info-left">Logged in as: <span class="italic">andre.silva</span> <span class="small">(Andre Silva - manager)</span></td><td class="login-info-middle"><span class="italic">2022-03-24 22:43 -03</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="/set_project.php">Project: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0">All Projects</option>
+<option value="268" selected="selected">Daniella Maleski's Project</option>
+<option value="24">Desafio jMeter Project 1</option>
+<option value="25">Desafio jMeter Project 2</option>
+<option value="123">Fabiana Carvalho´s Project </option>
+<option value="146">ProjectTatiane</option>
+<option value="205">ProjetoTreinamentoTati</option>
+<option value="206">Tesrt</option>
+<option value="207">TesteTati</option>
+</select> <input type="submit" class="button-small" value="Switch"></form><a href="https://mantis-prova.base2.com.br/issues_rss.php?username=andre.silva&amp;key=fc076a4dc0b0889a1a8be135270bd9dd&amp;project_id=268"><img src="/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;"></a></td></tr></tbody></table><table class="width100" cellspacing="0"><tbody><tr><td class="menu"><a href="/my_view_page.php">My View</a> | <a href="/view_all_bug_page.php">View Issues</a> | <a href="/bug_report_page.php">Report Issue</a> | <a href="/changelog_page.php">Change Log</a> | <a href="/roadmap_page.php">Roadmap</a> | <a href="/summary_page.php">Summary</a> | <a href="/manage_overview_page.php">Manage</a> | <a href="/account_page.php">My Account</a> | <a href="/logout_page.php">Logout</a></td><td class="menu right nowrap"><form method="post" action="/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'">&nbsp;<input type="submit" class="button-small" value="Jump">&nbsp;</form></td></tr></tbody></table><br>
+<div align="center">
+Operation successful.<br><span class="bracket-link">[&nbsp;<a href="view.php?id=8997">View Submitted Issue 8997</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="view_all_bug_page.php">View Issues</a>&nbsp;]</span> </div>
+
+	<br>
+	<hr size="1">
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody><tr valign="top"><td>	<address>Copyright © 2000 - 2022 MantisBT Team</address>
+	<address><a href="mailto:redes@base2.com.br">redes@base2.com.br</a></address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/images/mantis_logo.png" width="145" height="50" alt="Powered by Mantis Bugtracker" border="0"></a></div>
+</td></tr></tbody></table>
+
+
+</body></html>
