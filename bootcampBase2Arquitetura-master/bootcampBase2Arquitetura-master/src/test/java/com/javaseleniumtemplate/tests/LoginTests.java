@@ -2,6 +2,7 @@ package com.javaseleniumtemplate.tests;
 
 import com.javaseleniumtemplate.bases.TestBase;
 import com.javaseleniumtemplate.pages.CadastroPage;
+import com.javaseleniumtemplate.pages.EditPage;
 import com.javaseleniumtemplate.pages.LoginPage;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,6 +16,7 @@ public class LoginTests extends TestBase {
     //Objects
     LoginPage loginPage;
     CadastroPage cadastroPage;
+    EditPage editPage;
     //Tests
     @Test
     public void efetuarLoginEmailInvalido() throws IOException {
@@ -22,6 +24,7 @@ public class LoginTests extends TestBase {
         //Objects instances
         loginPage = new LoginPage();
         cadastroPage = new CadastroPage();
+        editPage = new EditPage();
 
         //Parameteres
         String usuario = "andre.silva";
@@ -34,6 +37,7 @@ public class LoginTests extends TestBase {
         String handlerId = "andre.silva";
         String summary = "Base2";
         String description = "Base2 - Camp Automação de Testes de Software";
+        String mensagemSuccessful = "Operation successful.";
 
         //Test
         //loginPage.clicarEmAceitarCookies();
@@ -55,7 +59,17 @@ public class LoginTests extends TestBase {
         cadastroPage.preencherDescriptionField(description);
         cadastroPage.clicarSubmitReportField();
 
-        cadastroPage.pegarHtml();
+        //cadastroPage.pegarHtml();
+        //Assert.assertEquals(cadastroPage.pegarHtml(),mensagemSuccessful);
+        Assert.assertTrue(cadastroPage.pegarHtml().contains(mensagemSuccessful));
+        editPage.clicarViewSubmittedField();
+
+        String nota = "Reta final CAMP BASE2, Let's GO!!!";
+
+        editPage.preencherBugnoteTextField(nota);
+        editPage.clicarAddNoteButton();
+
     }
+
 
 }
