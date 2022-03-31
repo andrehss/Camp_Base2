@@ -35,5 +35,6 @@ public class GlobalParameters {
         URL_DEFAULT = properties.getProperty("url.default");
         DOWNLOAD_DEFAULT_PATH = properties.getProperty("download.defaul.path");
         SENHA_GERAL = properties.getProperty("senhaGeral");
+
     }
 }

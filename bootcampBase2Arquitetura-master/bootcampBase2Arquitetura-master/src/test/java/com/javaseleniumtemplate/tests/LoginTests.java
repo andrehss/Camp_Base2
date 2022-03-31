@@ -67,7 +67,7 @@ public class LoginTests extends TestBase {
         String nota = "Reta final CAMP BASE2, Let's GO!!!";
 
         editPage.preencherBugnoteTextField(nota);
-        editPage.clicarAddNoteButton();
+        //editPage.clicarAddNoteButton();
 
     }
 
