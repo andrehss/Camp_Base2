@@ -12,7 +12,7 @@ public class LoginPage extends PageBase {
     By sucessUser = By.className("italic");
 
     //Actions
-    public void preenhcerUsuario(String usuario){
+    public void preencherUsuario(String usuario){
         sendKeys(usernameField, usuario);
     }
 
@@ -31,6 +31,5 @@ public class LoginPage extends PageBase {
     public String retornaUserLogin(){
         return getText(sucessUser);
     }
-
-
+    
 }

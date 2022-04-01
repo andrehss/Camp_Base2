@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.io.*;
 
-
 public class CadastroPage extends PageBase {
 
     By reportIssueField = By.linkText("Report Issue");
@@ -19,7 +18,6 @@ public class CadastroPage extends PageBase {
     By summaryField = By.name("summary");
     By descriptionField = By.name("description");
     By submitReportField = By.xpath("//input[@value='Submit Report']");
-    //By messageSuccessfulField = By.xpath("//input[contains(text(),'Operation successful.')]");
 
     public void clicarReportIssueField(){click(reportIssueField);}
     public void clicarSelectProject(){click(selectProjectButton);}
@@ -42,12 +40,9 @@ public class CadastroPage extends PageBase {
     public void clicarSubmitReportField(){click(submitReportField);}
 
     public String pegarHtml() throws IOException{
-        //String mensagemAux = driver.getPageSource();
+
         return driver.getPageSource();
 
-        //PrintWriter ps = new PrintWriter("HTML.txt");
-        //ps.print(driver.getPageSource());
-        //ps.close();
     }
 
 
