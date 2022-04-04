@@ -11,6 +11,7 @@ public class PreencherViewIssuePage extends PageBase {
     By advancedFiltersField = By.linkText("Advanced Filters");
     By editButton = By.cssSelector("[title~=Edit]");
 
+
     public void clicarEditButton(){
         click(editButton);
     }

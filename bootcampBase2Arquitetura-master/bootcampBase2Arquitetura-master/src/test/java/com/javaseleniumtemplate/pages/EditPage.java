@@ -9,6 +9,9 @@ public class EditPage extends PageBase {
     By updateInformationButton = By.xpath("//input[@value='Update Information']");
     By comboBoxStatusField = By.name("status");
     By comboBoxPriorityField = By.name("priority");
+    By userMonitorIssueField = By.name("username");
+    By addUserMonitorIssueButton = By.xpath("//div[@id='monitoring_open']/table[@class='width100']//input[@value='Add']");
+    By messageErrorAddUserMonitoringIssueField = By.className("form-title");
 
     public void preencherBugnoteTextField(String nota){
         sendKeys(bugnoteTextField,nota);
@@ -20,9 +23,11 @@ public class EditPage extends PageBase {
 
     public void clicarUpdateInformationButton(){click(updateInformationButton);}
 
+    public void preencherUserMonitorIssue(String usuarioMonitorIssue){sendKeys(userMonitorIssueField,usuarioMonitorIssue);}
 
+    public void clicarAddUserMonitorIssue(){click(addUserMonitorIssueButton);}
 
-
-
-
+    public String pegarMessageErrorAddUserMonitoringIssue(){
+        return getText(messageErrorAddUserMonitoringIssueField);
+    }
 }

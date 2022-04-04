@@ -9,7 +9,6 @@ public class CloseIssuePage extends PageBase {
     By comboBoxResolutionField = By.name("resolution");
     By addNoteCloseIssueField = By.name("bugnote_text");
     By closeIssueButton = By.xpath("//input[@value='Close Issue']");
-    //By statusIssue = By.className("issue-status");
     By statusIssue = By.className("issue-status");
 
     public String pegarStatusIssue(){return getText(statusIssue);}

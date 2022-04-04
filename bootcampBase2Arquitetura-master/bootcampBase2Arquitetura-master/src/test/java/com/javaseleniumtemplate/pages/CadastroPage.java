@@ -18,6 +18,7 @@ public class CadastroPage extends PageBase {
     By summaryField = By.name("summary");
     By descriptionField = By.name("description");
     By submitReportField = By.xpath("//input[@value='Submit Report']");
+    By messageErrorReportField = By.className("form-title");
 
     public void clicarReportIssueField(){click(reportIssueField);}
     public void clicarSelectProject(){click(selectProjectButton);}
@@ -40,20 +41,11 @@ public class CadastroPage extends PageBase {
     public void clicarSubmitReportField(){click(submitReportField);}
 
     public String pegarHtml() throws IOException{
-
         return driver.getPageSource();
-
     }
 
-
-
-
-
-
-
-
-
-
-
+    public String pegarMensagemDeErroReport(){
+        return getText(messageErrorReportField);
+    }
 
 }

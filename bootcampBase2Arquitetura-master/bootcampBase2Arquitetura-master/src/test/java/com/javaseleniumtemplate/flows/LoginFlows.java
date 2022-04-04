@@ -17,6 +17,5 @@ public class LoginFlows {
         loginPage.preencherUsuario(usuario);
         loginPage.preencherSenha(senha);
         loginPage.clicarEmLogin();
-        loginPage.retornaUserLogin();
     }
 }

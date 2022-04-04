@@ -9,7 +9,8 @@ public class LoginPage extends PageBase {
     By passwordField = By.name("password");
     By loginButton = By.xpath("//input[@value='Login']");
     By cookieButton = By.xpath("//*[@aria-label='dismiss cookie message']");
-    By sucessUser = By.className("italic");
+    By sucessUserField = By.className("italic");
+    By messagemErrorLoginField = By.cssSelector("[color='red']");
 
     //Actions
     public void preencherUsuario(String usuario){
@@ -29,7 +30,9 @@ public class LoginPage extends PageBase {
     }
 
     public String retornaUserLogin(){
-        return getText(sucessUser);
+        return getText(sucessUserField);
     }
-    
+
+    public String pegarMessagemDeErroLogin(){return getText(messagemErrorLoginField);}
+
 }

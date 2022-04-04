@@ -6,22 +6,22 @@ import com.javaseleniumtemplate.pages.LoginPage;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class EfetuarLoginComSucesso extends TestBase {
+public class EfetuarLoginSemSucesso extends TestBase {
 
     LoginFlows loginFlows;
     LoginPage loginPage;
 
     @Test
-    public void efetuarLoginComSucesso(){
+    public void efetuarLoginSemSucesso(){
         loginFlows = new LoginFlows();
         loginPage = new LoginPage();
 
         String usuario = "andre.silva";
-        String senha = "M@nti$B@se22#";
-        String usuarioLogado = "andre.silva";
+        String senha = "senhaerrada";
+        String mensagemDeErroLogin = "Your account may be disabled or blocked or the username/password you entered is incorrect.";
 
         loginFlows.efetuarLogin(usuario,senha);
 
-        Assert.assertEquals(loginPage.retornaUserLogin(),usuarioLogado);
+        Assert.assertEquals(loginPage.pegarMessagemDeErroLogin(),mensagemDeErroLogin);
     }
 }
